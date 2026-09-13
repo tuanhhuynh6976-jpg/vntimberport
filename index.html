@@ -1,0 +1,615 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>VNTimber — Quality in Every Grain</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&amp;family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary":"#ffffff","surface-container-high":"#f1e7d7","surface":"#fff8f1","error-container":"#ffdad6","surface-bright":"#fff8f1","on-primary-fixed":"#331100","secondary-fixed":"#ffdcc4","primary-fixed":"#ffdbca","on-surface":"#1f1b11","on-secondary-fixed-variant":"#5d402a","on-tertiary-fixed":"#1f1c00","inverse-surface":"#353025","surface-dim":"#e2d9c9","inverse-primary":"#ffb68f","on-tertiary-fixed-variant":"#4c4822","on-primary":"#ffffff","inverse-on-surface":"#f9f0df","on-background":"#1f1b11","surface-container":"#f6eddc","tertiary-fixed":"#ece4b1","secondary-fixed-dim":"#e8bea1","surface-variant":"#ebe1d1","primary-fixed-dim":"#ffb68f","on-primary-container":"#f6ab84","error":"#ba1a1a","secondary-container":"#fdd2b3","surface-container-highest":"#ebe1d1","outline":"#85736b","on-error":"#ffffff","on-secondary-fixed":"#2c1604","outline-variant":"#d7c2b9","primary":"#57280a","surface-container-low":"#fcf2e2","on-primary-fixed-variant":"#6d391a","primary-container":"#733e1f","secondary":"#785840","on-tertiary":"#ffffff","tertiary":"#645f37","tertiary-fixed-dim":"#cfc897","surface-tint":"#89502f","tertiary-container":"#b4ad7e","on-error-container":"#93000a","background":"#fff8f1","surface-container-lowest":"#ffffff","on-tertiary-container":"#45411b","on-surface-variant":"#52443d","on-secondary-container":"#785840"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter-sm":"1rem","space-lg":"2rem","margin":"3rem","space-xl":"3.5rem","space-sm":"0.75rem","space-md":"1.25rem","space-xs":"0.375rem","gutter":"1.5rem","margin-sm":"1.25rem"},"fontFamily":{"body-md":["Literata"],"headline-xl":["Epilogue"],"headline-xl-mobile":["Epilogue"],"display-lg-mobile":["Epilogue"],"body-sm":["Literata"],"headline-sm":["Epilogue"],"label-sm":["Epilogue"],"label-md":["Epilogue"],"display-lg":["Epilogue"],"body-lg":["Literata"],"headline-lg":["Epilogue"],"label-lg":["Epilogue"]},"fontSize":{"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-xl":["42px",{"lineHeight":"50px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-lg-mobile":["38px",{"lineHeight":"46px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"30px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["15px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script><style id="custom-timber-scrollbar" class="">/* Standard scrollbar rules */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #733e1f rgba(115, 62, 31, 0.15);
+}
+/* Custom WebKit scrollbar styling matching warm timber palette */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  display: block !important;
+}
+::-webkit-scrollbar-track {
+  background: rgba(115, 62, 31, 0.12);
+  border-left: 1px solid rgba(115, 62, 31, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8c6a51 0%, #733e1f 100%);
+  border-radius: 9999px;
+  border: 2px solid rgba(246, 237, 220, 0.7);
+  box-shadow: 0 1px 4px rgba(51, 17, 0, 0.35);
+  transition: all 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #733e1f 0%, #57280a 100%);
+  border-color: rgba(255, 255, 255, 0.85);
+}</style></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-40 bg-[#ded5c5]/85 backdrop-blur-[14px] border-b border-[#8c6a51]/25 transition-all duration-300 shadow-[0_4px_24px_-2px_rgba(115,62,31,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-4"><div class="flex items-center gap-6"><a class="flex items-center gap-3 group focus:outline-none" data-path="home" href="#"><img alt="VNTimber Logo" class="h-9 w-auto object-contain transition-transform group-hover:scale-105 duration-200" src="https://lh3.googleusercontent.com/aida/AEtjO1VdMvEhEM6vysSa-mTNOWHet-eIa5YpAHb7_B2lkIM1HGRILTzlO0HgDQLWiaI4dEaj6kIFdv9RGaDRC8Xw9GuagIaE53_rDa5Uc8LxJx-ix3XpusjjwWe40Qxzn7sEXrdpK4-FszzzCFQu7a6gBhXEny8JNQDX8Q1Np3IheI5EKa-sZJ1k7fhkGZ4gVRk_VGB8c_BFME3CIlTw2EsWcLaEVmfk1htNT-CGV__g3EVivBBwrg0hNwHYdfY3"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-[#21382b] tracking-tight leading-none">VNTimber</span><span class="font-label-sm text-[10px] tracking-widest uppercase text-secondary font-semibold mt-1">Heritage Provenance</span></div></a></div><nav class="hidden xl:flex items-center gap-7" data-active-classes="text-primary font-bold border-b-2 border-primary"><a aria-current="page" class="transition-colors py-1.5 text-primary font-bold border-b-2 border-primary" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5" data-path="browse" href="#">Browse</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5" data-path="care-plans" href="#">Care Plans</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5" data-path="inspection" href="#">Inspection</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5" data-path="consultation" href="#">Consultation</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5" data-path="account" href="#">Account</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-1.5" data-path="faq" href="#">FAQ</a></nav><div class="flex items-center gap-3 sm:gap-4"><a class="inline-flex items-center justify-center font-label-lg text-label-lg px-6 py-2.5 rounded-full bg-[#733e1f] text-[#ded5c5] shadow-[0_4px_16px_rgba(115,62,31,0.28)] hover:bg-[#8c6a51] hover:text-on-primary hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 focus:outline-none" data-path="consultation" href="#"><span class="material-symbols-outlined text-[18px] mr-2">calendar_month</span>Booking Consultation</a><div class="flex items-center gap-3 pl-1" id="auth-container"><button class="font-label-md text-label-md px-5 py-2 rounded-full border border-[#8c6a51] text-[#21382b] bg-[#ded5c5]/40 hover:bg-[#8c6a51]/15 transition-all duration-200 focus:outline-none" id="header-login-btn" onclick="openAuthModal()">Login</button><div class="hidden items-center gap-2.5" id="logged-in-profile"><div class="flex flex-col items-end leading-none"><span class="font-label-sm text-label-sm text-[#21382b] font-semibold">Master Joiner</span><button class="text-[11px] font-label-sm text-secondary hover:text-primary transition-colors underline decoration-dotted mt-0.5" onclick="openLogoutConfirm()">Logout</button></div><div class="relative p-0.5 rounded-full border border-[#8c865a]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXzdiBVsGezsUntNH6a2AMOqApbMfV6NnAelzZSG8zhd0dhZhwGa05zA07CLAFn_iqfH6W6gGz_VKHmhNagQyuTrkqUpRByV4kEa1Kkgi76LO84f7RZWT0zaSTO6VzzKkibwDEfbmE0-9CAWSvbZLsg81TnLdsMwQQlJTD3-_H4pyfA3YntKs7cQoMitYkBB126wl2jvKHm-07Dcn2KuQDLr3pS234CHp4bwUcOpv0v_COX_a1wU5w3Q"><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary ring-2 ring-[#ded5c5]"></span></div></div></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Hero Section with Architectural Scrim & Overlapping Glass Structure -->
+<section class="relative w-full -mt-20 overflow-hidden bg-surface-container-high">
+<!-- Ambient Woodgrain Background -->
+<div class="w-full min-h-[740px] lg:min-h-[820px] bg-cover bg-center relative flex items-center justify-center pt-24 pb-20 px-6 lg:px-12" data-alt="Ultra high-definition architectural studio interior illuminated by warm raking 315-degree sunlight. Massive live-edge black walnut slabs, planed quartersawn white oak beams, brass precision calipers, and natural warm sawdust atmosphere with rich organic wood grain textures in earthy clayborne and ivory tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9MzZGLj2iZaUQao_o67HtyNumODvQJzIOoi_9QajCUZbj9n-rV2z4EBDdbOsLVte8kvPDhOJmm0NHzHXco6e2yVBmw6jpKPjzaO48_DV7VCVFCGm9f0LBYsCpmrghvrdkkqKJwEvwX1NWzBXJ-prvspGwF_R1nuHxxKjPm6_RQqmSp4unRV44fGhv3v0W2uMgKD5vb6M893ylbZQfuCg5Ei7mG9wKRBCD7NoewRE-gxkjhOjRA4WuOw')">
+<!-- Layered Sunlit & Timber Scrim -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/35 to-primary-container/85 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-radial from-transparent via-primary-container/30 to-on-surface/60"></div>
+<!-- Floating Glass Centerpiece -->
+<div class="relative z-10 max-w-4xl mx-auto w-full text-center flex flex-col items-center">
+<!-- Botanical Provenance Tag -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container/60 backdrop-blur-md shadow-md mb-6 transition-all hover:scale-105">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">Old-Growth &amp; Salvaged Architectural Timbers</span>
+<span class="material-symbols-outlined text-sm text-tertiary">eco</span>
+</div>
+<!-- Glass Hero Card -->
+<div class="w-full p-8 sm:p-12 lg:p-16 rounded-xl bg-surface-container-high/65 backdrop-blur-2xl shadow-[0_24px_60px_-12px_rgba(33,56,43,0.35)] flex flex-col items-center">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-primary-container text-3xl">filter_vintage</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-widest text-primary-container">VNTimber</span>
+</div>
+<h1 class="font-display-lg text-headline-xl sm:text-display-lg text-primary tracking-tight font-extrabold max-w-2xl leading-none mb-4">
+            Quality you can feel in every grain.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
+            Sustainably sourced heritage timber, artisanal refinishing care, and laboratory-grade age verification for master craftsmen, heritage joiners, and visionary architects.
+          </p>
+<!-- Dual CTAs -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center font-label-lg text-label-lg px-8 py-4 rounded-full bg-primary-container text-surface-container-low shadow-[0_8px_24px_rgba(115,62,31,0.35)] hover:bg-secondary hover:text-on-primary hover:scale-[1.02] active:scale-[0.98] transition-all duration-200" href="#catalog-section">
+<span class="material-symbols-outlined text-[20px] mr-2.5">inventory_2</span>
+              Explore Catalog
+            </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center font-label-lg text-label-lg px-8 py-4 rounded-full bg-surface-container-high/70 backdrop-blur-md text-on-surface shadow-md hover:bg-surface-variant hover:scale-[1.02] active:scale-[0.98] transition-all duration-200" href="#inspection-section">
+<span class="material-symbols-outlined text-[20px] mr-2.5 text-tertiary">verified</span>
+              Verify Your Timber
+            </a>
+</div>
+</div>
+<!-- Trust Metrics Pill Floating Bar -->
+<div class="mt-8 w-full max-w-3xl rounded-full bg-surface-container-low/75 backdrop-blur-xl p-2 sm:p-3 shadow-[0_12px_32px_rgba(115,62,31,0.15)]">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-center">
+<div class="py-2 px-3 flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">14,200+</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Certified Batches</span>
+</div>
+<div class="py-2 px-3 flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">FSC &amp; PEFC</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Chain of Custody</span>
+</div>
+<div class="py-2 px-3 flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">48hr</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Lab Turnaround</span>
+</div>
+<div class="py-2 px-3 flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">99.4%</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Species Accuracy</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3 Main Pillars / Service Gateway Cards -->
+<section class="max-w-[1440px] mx-auto px-6 lg:px-12 py-16 -mt-10 relative z-20 w-full">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Pillar 1: Browse Products -->
+<a class="group rounded-lg bg-surface-container-low/85 backdrop-blur-xl p-8 shadow-[0_12px_36px_-6px_rgba(115,62,31,0.12)] hover:shadow-[0_20px_48px_-8px_rgba(115,62,31,0.22)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" href="#catalog-section">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-container flex items-center justify-center text-primary-container mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">carpenter</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Primary Reserve</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-1 mb-3 group-hover:text-primary transition-colors">
+            Browse Products
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Curated exotic hardwoods, single-slab bookmatched walnut, architectural salvaged joists, and kiln-stabilized dimensional lumber.
+          </p>
+</div>
+<div class="pt-6 mt-6 flex items-center justify-between text-primary font-label-md text-label-md font-bold">
+<span class="">Search 420+ Timber Lots</span>
+<span class="material-symbols-outlined transform group-hover:translate-x-1.5 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Pillar 2: Timber Care -->
+<a class="group rounded-lg bg-surface-container-low/85 backdrop-blur-xl p-8 shadow-[0_12px_36px_-6px_rgba(115,62,31,0.12)] hover:shadow-[0_20px_48px_-8px_rgba(115,62,31,0.22)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" href="#care-section">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed/60 flex items-center justify-center text-tertiary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">format_paint</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Atelier Services</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-1 mb-3 group-hover:text-primary transition-colors">
+            Timber Care
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Master hand-rubbed hardwax oils, vacuum kiln drying stabilization, ultrasonic tannin preservation, and bespoke restoration plans.
+          </p>
+</div>
+<div class="pt-6 mt-6 flex items-center justify-between text-primary font-label-md text-label-md font-bold">
+<span class="">Explore Restoration Plans</span>
+<span class="material-symbols-outlined transform group-hover:translate-x-1.5 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Pillar 3: Quality Inspection -->
+<a class="group rounded-lg bg-surface-container-low/85 backdrop-blur-xl p-8 shadow-[0_12px_36px_-6px_rgba(115,62,31,0.12)] hover:shadow-[0_20px_48px_-8px_rgba(115,62,31,0.22)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between" href="#inspection-section">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">biotech</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Laboratory Protocol</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-1 mb-3 group-hover:text-primary transition-colors">
+            Quality Inspection
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Radiocarbon ring count verification, acoustic tomographic density mapping, cellular moisture analysis, and tamper-proof NFC grain tokens.
+          </p>
+</div>
+<div class="pt-6 mt-6 flex items-center justify-between text-primary font-label-md text-label-md font-bold">
+<span class="">Verify Provenance Report</span>
+<span class="material-symbols-outlined transform group-hover:translate-x-1.5 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Featured Rare Woods & Slabs Showcase -->
+<section class="max-w-[1440px] mx-auto px-6 lg:px-12 py-12 w-full" id="catalog-section">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<div class="inline-flex items-center gap-1.5 text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-base text-tertiary">workspace_premium</span>
+          Curated Architectural Slabs
+        </div>
+<h2 class="font-headline-xl text-headline-xl text-primary mt-1">
+          Rare Hardwoods &amp; Live-Edge Slabs
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">
+          Every flitch is logged with exact GPS harvest coordinates, cellular moisture content, and dendrochronological ring scans.
+        </p>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<button class="px-4 py-2 rounded-full bg-primary-container text-surface-container-low font-label-sm text-label-sm whitespace-nowrap shadow-sm">All Slabs (24)</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high/80 text-on-surface hover:bg-surface-variant font-label-sm text-label-sm whitespace-nowrap">Old-Growth Walnut</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high/80 text-on-surface hover:bg-surface-variant font-label-sm text-label-sm whitespace-nowrap">Salvaged Oak</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high/80 text-on-surface hover:bg-surface-variant font-label-sm text-label-sm whitespace-nowrap">Heritage Teak</button>
+</div>
+</div>
+<!-- 4-Up Timber Showcase Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Item 1: 180-Year English Walnut -->
+<div class="group rounded-lg bg-surface-container-low/90 backdrop-blur-md overflow-hidden shadow-[0_10px_30px_rgba(115,62,31,0.08)] hover:shadow-[0_18px_40px_rgba(115,62,31,0.18)] transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Exquisite macro close-up of a 180-year-old English Walnut slab showing deep dark chocolate heartwood streaks, swirling fiddleback curl figure, and finely planed satin sheen illuminated by warm natural woodcraft studio side lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA36wx5uEKMLtRPONdlAUpa2BVXbsVH_mS0a37j2rITExf1oGWZ12yDUr2oiL1OFPiAJLwFSax4mPHe2aH6EzA_dKMtA1dH-HFtUFg6J7v0_wmEqKcwMKQfMdGV1ALykrL2YnMV_lI7hcQq8IOFpcG7NkccR5CG-CLAuJllMxIq6TCn4MWLTIHkx-BkF8vQ0WVLTH71nmIfzd538tTTe9HU4DW3l8TOz1cVHpdqzqCLxSU9jCShmDgMKw">
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-on-surface/85 backdrop-blur-sm text-surface-container-lowest font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-tertiary-fixed">history</span> 180 Years Verified
+          </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold">
+            7.4% MC
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Juglans Regia • Cotswolds Flitch</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">English Walnut Monolith</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
+              Deep chocolate curls with feather crotch grain figure, air-dried for 4 years then vacuum finished.
+            </p>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase">Specimen Price</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$185 <span class="text-xs font-normal text-on-surface-variant">/ board ft</span></span>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-surface-container-high text-primary hover:bg-primary-container hover:text-surface-container-low font-label-md text-label-md transition-all flex items-center gap-1.5 shadow-sm" onclick="addSpecToast('English Walnut Monolith (Lot #W-814)')">
+<span class="material-symbols-outlined text-[16px]">add_circle</span> Spec
+            </button>
+</div>
+</div>
+</div>
+<!-- Item 2: Sustainable Old-Growth Teak -->
+<div class="group rounded-lg bg-surface-container-low/90 backdrop-blur-md overflow-hidden shadow-[0_10px_30px_rgba(115,62,31,0.08)] hover:shadow-[0_18px_40px_rgba(115,62,31,0.18)] transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Flawless vertical grain of genuine golden old-growth teak timber plank with natural silicone oil sheen, straight tight micro-rings, and satin hand-rubbed finish under warm architectural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwZLGeNyfLvBTWO9DO0smVwx1ug4YKE30_ualBme4m02oSq0D_p4XvWLLBpNVqn6ZYTwRm5rwfvqldBFt0bEy1BBKSPA55Iqcy9OcbgG8lyh8_4fTiviXUZzihFNVAHA0iwHxlT1aMPmqVD9sOnUUma_JyhnRNAZAnZx8KYqTh52wEkJ6aQ1ZTuzipvFmqzWkL8da1CcmCIm8tSGi4yGltMnn4BDmiKq4LqlnKcfHBSFXZLxUxbrb8HA">
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-on-surface/85 backdrop-blur-sm text-surface-container-lowest font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-tertiary-fixed">eco</span> FSC Salvaged 1920
+          </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold">
+            6.9% MC
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Tectona Grandis • Java Reserve</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Heritage Burma Teak</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
+              High natural resin resistance, tight ring spacing from colonial bridge timber salvage.
+            </p>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase">Specimen Price</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$210 <span class="text-xs font-normal text-on-surface-variant">/ board ft</span></span>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-surface-container-high text-primary hover:bg-primary-container hover:text-surface-container-low font-label-md text-label-md transition-all flex items-center gap-1.5 shadow-sm" onclick="addSpecToast('Heritage Burma Teak (Lot #T-302)')">
+<span class="material-symbols-outlined text-[16px]">add_circle</span> Spec
+            </button>
+</div>
+</div>
+</div>
+<!-- Item 3: Reclaimed Quarter-Sawn White Oak -->
+<div class="group rounded-lg bg-surface-container-low/90 backdrop-blur-md overflow-hidden shadow-[0_10px_30px_rgba(115,62,31,0.08)] hover:shadow-[0_18px_40px_rgba(115,62,31,0.18)] transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Striking medullary ray flecks shimmering on a quartersawn white oak timber board with delicate golden honey patina and precise timber mill texture in an artisan wood shop setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0UsXkGbmvCMk3MD5hS_otQPgPDDCY4UASPVPHySstRBfwJIh_UtbWWbXSq-nhYq5NE0NvsWQVabWAuW-gZHOEv8Bl0gQsIi5MdojFQw0XxZsnSvsf9sieH6z016tJY66wz20rMZ0GKyUFo6h03GJ0SiREd2wuCXwR0GsPjzlF5ohVmYmylmaLR5Pidy9mLJo8sAWEYDkMRbxFzNPAGHTlosbqe_vptl3NwCVoEbjyn088BNZM872iAg">
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-on-surface/85 backdrop-blur-sm text-surface-container-lowest font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-tertiary-fixed">verified</span> Medullary Rays
+          </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold">
+            8.1% MC
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Quercus Alba • Appalachian Flitch</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Quartersawn White Oak</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
+              Pronounced silver ray fleck figure with optimal dimensional stability for fine cabinetry.
+            </p>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase">Specimen Price</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$125 <span class="text-xs font-normal text-on-surface-variant">/ board ft</span></span>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-surface-container-high text-primary hover:bg-primary-container hover:text-surface-container-low font-label-md text-label-md transition-all flex items-center gap-1.5 shadow-sm" onclick="addSpecToast('Quartersawn White Oak (Lot #O-912)')">
+<span class="material-symbols-outlined text-[16px]">add_circle</span> Spec
+            </button>
+</div>
+</div>
+</div>
+<!-- Item 4: Ancient Bog Oak -->
+<div class="group rounded-lg bg-surface-container-low/90 backdrop-blur-md overflow-hidden shadow-[0_10px_30px_rgba(115,62,31,0.08)] hover:shadow-[0_18px_40px_rgba(115,62,31,0.18)] transition-all duration-300 flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rare ancient bog oak timber slab with jet-black petrified appearance, subtle charcoal grain veins, and smooth hand-sanded velvety finish photographed under museum-grade spotlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4h4n4u8nhGc5-Km_wFQwZLdMaRlcGJIyvRFZBSaf7FP75b043QkirsSbOFuostK2uMHHk2J-ol7IgBlkfl4dVNRcOEdN7JOqPAMGj60ivOsg0MgU70Iw0tMxQ3ZSEVzF3myDlsn0mH5DFPRQPjxbw4e2FBSGgnPFUKgDQRmSlhT548svg7m6ZqBT08aU3SM4Cu8NiIKSvH4dYDlWL-uu1mMjC18o8ueR6B2QP13dPBHzqWKUyzMiviA">
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-on-surface/85 backdrop-blur-sm text-surface-container-lowest font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-xs text-tertiary-fixed">arrows_outward</span> C-14: 3,400 BP
+          </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold">
+            5.8% MC
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Sub-Fossil Quercus • Fenland Basin</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Ancient Bog Oak Flitch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2">
+              Preserved in anaerobic peat bogs for 3 millennia. Deep obsidian mineral reaction without stains.
+            </p>
+</div>
+<div class="pt-6 mt-4 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] text-on-surface-variant uppercase">Specimen Price</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">$340 <span class="text-xs font-normal text-on-surface-variant">/ board ft</span></span>
+</div>
+<button class="px-4 py-2.5 rounded-full bg-surface-container-high text-primary hover:bg-primary-container hover:text-surface-container-low font-label-md text-label-md transition-all flex items-center gap-1.5 shadow-sm" onclick="addSpecToast('Ancient Bog Oak (Lot #BO-104)')">
+<span class="material-symbols-outlined text-[16px]">add_circle</span> Spec
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Timber Care Comparison & Refinishing Slider -->
+<section class="max-w-[1440px] mx-auto px-6 lg:px-12 py-16 w-full" id="care-section">
+<div class="p-8 sm:p-12 lg:p-14 rounded-xl bg-surface-container/70 backdrop-blur-xl shadow-[0_16px_40px_rgba(115,62,31,0.08)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Left Editorial Copy -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wider w-fit mb-4">
+<span class="material-symbols-outlined text-sm">auto_fix_high</span> Hand-Planed Refinishing
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-primary leading-tight">
+            Restoration that honors the tree's memory.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 leading-relaxed">
+            Timber breathes continuously. Our climate-controlled atelier employs low-temperature vacuum moisture extraction and botanical waxes that penetrate cellular pores without artificial polymers.
+          </p>
+<!-- Key Care Badges -->
+<div class="grid grid-cols-2 gap-4 my-6">
+<div class="p-4 rounded-2xl bg-surface-container-low/90">
+<span class="font-headline-sm text-headline-sm text-primary block font-bold">0% VOC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Natural Cold-Pressed Linseed &amp; Carnauba</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low/90">
+<span class="font-headline-sm text-headline-sm text-primary block font-bold">± 0.5%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Calibrated Equilibrium Equilibrium MC</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-3 rounded-full bg-primary-container text-surface-container-low font-label-lg text-label-lg hover:bg-secondary hover:text-on-primary transition-all shadow-md inline-flex items-center gap-2" onclick="document.getElementById('care-plan-modal').classList.remove('hidden')">
+<span class="">Explore Care Protocol</span>
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+<span class="font-label-sm text-label-sm text-on-surface-variant italic">Sample treatment shown right</span>
+</div>
+</div>
+<!-- Right Interactive Before/After Split Viewer -->
+<div class="lg:col-span-7 flex flex-col items-center">
+<div class="relative w-full h-[380px] sm:h-[440px] rounded-lg overflow-hidden shadow-2xl select-none" id="slider-container">
+<!-- Background: Restored State (After) -->
+<div class="absolute inset-0 bg-cover bg-center w-full h-full" data-alt="Exquisitely restored reclaimed black walnut surface treated with deep organic matte hardwax oil, glowing with golden highlights and ultra-clear grain definition under studio light." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCd1jvM2IyDuCSHAhMhuMnQoBj2_DTPukGnCH5rI43nQNtA0lLy6hOFNr6vCeNED4Uy37fHLbydB9-O2Avrh96i4qnFkYCY11JwXk-O3Ow_YaVd3eEPNLOmGXTx_cTP36he7K7kFOCg6RJVX19FVkRE7a39mfNVbEH_lDS7oGB11Tv8mHkHWJjUCbbvl3sBxQn0KZAkO1kIHOZEbI3v96p--jYOsfPwKQT1oxNosDr9h26jIL6vQQxKLA')">
+<div class="absolute bottom-4 right-4 px-4 py-1.5 rounded-full bg-on-surface/80 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm">
+                After: Organic Tung &amp; Carnauba Finish
+              </div>
+</div>
+<!-- Foreground: Weathered State (Before, clipped) -->
+<div class="absolute inset-y-0 left-0 bg-cover bg-left overflow-hidden z-10" data-alt="Raw, weathered, gray oxidized salvaged barn timber surface with raw saw marks, dried tannin crust, and unconditioned micro-cracks before preservation." id="before-image-layer" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2IKq1TPNdOj61NyaTfwTUNtAbjrith1o0TtSII5RyS0jSn0VtfjaV7x28PHYsloeQWGHeYrmeSkJEx4JkQWWsCvr12jXwbw7cdLnL_2Pfb66PBIj3hxMJFiHP6bxsVgPP3aAC0wAM7FTwfdkB0j4gtPJJX7Qp-SEfl1g25Aa2W7dNx2hF0yz_Ip3Fxk98rX56DqI7stp6zmZ4bSHQd7WwjroUwhzne41G27ZXD8pjYedbYu6CvtIZCg'); width: 50%;">
+<div class="absolute bottom-4 left-4 px-4 py-1.5 rounded-full bg-primary/80 backdrop-blur-md text-surface-container-low font-label-sm text-label-sm whitespace-nowrap">
+                Before: Raw Weathered Salvage
+              </div>
+</div>
+<!-- Slider Handle Divider -->
+<div class="absolute top-0 bottom-0 z-20 w-1 bg-surface-container-lowest cursor-ew-resize flex items-center justify-center -ml-0.5" id="slider-handle" style="left: 50%;">
+<div class="w-10 h-10 rounded-full bg-primary-container text-surface-container-low shadow-[0_4px_12px_rgba(0,0,0,0.3)] flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">unfold_more</span>
+</div>
+</div>
+</div>
+<!-- Helper instructions -->
+<div class="flex items-center gap-2 mt-3 text-xs font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span class="">Drag slider horizontally to preview deep oil saturation</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Laboratory Quality Inspection Process -->
+<section class="max-w-[1440px] mx-auto px-6 lg:px-12 py-16 w-full" id="inspection-section">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-1.5 text-tertiary font-label-sm text-label-sm uppercase tracking-widest font-bold mb-2">
+<span class="material-symbols-outlined text-base">science</span>
+        Forensic Botanical Authentication
+      </div>
+<h2 class="font-headline-xl text-headline-xl text-primary">
+        Four-Tier Provenance Pipeline
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        We bridge the ancient forest with contemporary architectural spec standards. No guessing, no undocumented timber.
+      </p>
+</div>
+<!-- 4 Step Process Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-7 rounded-lg bg-surface-container-low/80 backdrop-blur-md shadow-sm relative flex flex-col justify-between">
+<span class="font-display-lg text-headline-xl text-surface-variant font-extrabold absolute top-4 right-6 select-none">01</span>
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined">radio_button_checked</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Dendro-Chronology</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            High-resolution cross-sectional annual growth ring profiling to cross-reference continental climate matrices.
+          </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-sm text-secondary font-semibold">
+          Certified ring density log
+        </div>
+</div>
+<div class="p-7 rounded-lg bg-surface-container-low/80 backdrop-blur-md shadow-sm relative flex flex-col justify-between">
+<span class="font-display-lg text-headline-xl text-surface-variant font-extrabold absolute top-4 right-6 select-none">02</span>
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined">waves</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Acoustic Tomography</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Non-destructive microsecond pulse transmission detects hidden internal voids, cellular splits, or heart rot.
+          </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-sm text-secondary font-semibold">
+          3D Internal sonic render
+        </div>
+</div>
+<div class="p-7 rounded-lg bg-surface-container-low/80 backdrop-blur-md shadow-sm relative flex flex-col justify-between">
+<span class="font-display-lg text-headline-xl text-surface-variant font-extrabold absolute top-4 right-6 select-none">03</span>
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Multi-Point Moisture</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Core dielectric impedance mapping ensuring core-to-shell equilibrium moisture consistency between 6% and 8%.
+          </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-sm text-secondary font-semibold">
+          Equilibrium guarantee
+        </div>
+</div>
+<div class="p-7 rounded-lg bg-surface-container-low/80 backdrop-blur-md shadow-sm relative flex flex-col justify-between">
+<span class="font-display-lg text-headline-xl text-surface-variant font-extrabold absolute top-4 right-6 select-none">04</span>
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined">nfc</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Holographic NFC Tag</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Each flitch receives a brass RFID cylinder counter-sunk into the end-grain linking directly to chain-of-custody data.
+          </p>
+</div>
+<div class="mt-6 pt-4 text-xs font-label-sm text-secondary font-semibold">
+          Permanent digital certificate
+        </div>
+</div>
+</div>
+<!-- Live Certificate Preview Container -->
+<div class="mt-12 p-8 rounded-xl bg-surface-container-high/60 backdrop-blur-xl shadow-md flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-5">
+<div class="w-16 h-16 rounded-full bg-primary-container text-surface-container-low flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sample Authenticity Certificate #VN-9942</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validated for: Studio Foster &amp; Partners • English Walnut Specimen Lot</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-6 py-3 rounded-full bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-lowest transition-all shadow-sm flex items-center gap-2" onclick="openCertModal()">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span class="">View Sample Certificate</span>
+</button>
+<button class="px-6 py-3 rounded-full bg-primary-container text-surface-container-low font-label-md text-label-md hover:bg-secondary transition-all shadow-md flex items-center gap-2" onclick="openAuthModal()">
+<span class="material-symbols-outlined text-[18px]">fingerprint</span>
+<span class="">Lookup NFC Tag</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Care Protocol Drawer / Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-on-surface/60 backdrop-blur-md" id="care-plan-modal">
+<div class="w-full max-w-2xl p-8 rounded-xl bg-surface-container-low/95 backdrop-blur-2xl shadow-2xl relative max-h-[921px] overflow-y-auto">
+<button class="absolute top-6 right-6 text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('care-plan-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary">spa</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Atelier Standard Operating Procedure</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary mb-4">Artisanal Conditioning Protocol</h3>
+<div class="space-y-4 font-body-md text-body-md text-on-surface">
+<div class="p-4 rounded-2xl bg-surface-container-high/60">
+<strong class="text-primary font-headline-sm block mb-1">Step 1: Ultrasonic Grain De-Fuzzing</strong>
+<p class="text-on-surface-variant text-body-sm">Removes mill burnish while raising compressed winter ring fibers without chemical caustics.</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-high/60">
+<strong class="text-primary font-headline-sm block mb-1">Step 2: Dual Immersion Deep Saturation</strong>
+<p class="text-on-surface-variant text-body-sm">Warm Swedish pine tar and cold-pressed organic walnut oil penetrate 4mm into cellular sapwood.</p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-high/60">
+<strong class="text-primary font-headline-sm block mb-1">Step 3: Horsehair Buffing &amp; Thermal Wax Lock</strong>
+<p class="text-on-surface-variant text-body-sm">Pure microcrystalline and beeswax buffed at 1,200 RPM generating friction heat for permanent water repellence.</p>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="px-6 py-2.5 rounded-full bg-primary-container text-surface-container-low font-label-md text-label-md" onclick="document.getElementById('care-plan-modal').classList.add('hidden')">
+          Close Protocol
+        </button>
+</div>
+</div>
+</div>
+<!-- Authenticity Certificate Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-on-surface/70 backdrop-blur-lg" id="cert-modal">
+<div class="w-full max-w-xl p-8 sm:p-10 rounded-xl bg-surface-container-lowest/95 backdrop-blur-2xl shadow-2xl relative text-on-surface">
+<button class="absolute top-6 right-6 text-on-surface-variant hover:text-on-surface" onclick="closeCertModal()">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+<div class="text-center pb-6">
+<div class="w-16 h-16 rounded-full bg-surface-container-high mx-auto flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">VNTimber Guild Provenance Seal</span>
+<h3 class="font-headline-lg text-headline-lg text-primary mt-1">Certificate of Dendrological Authenticity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Serial ID: VNT-2025-OAK-0914-EXP</p>
+</div>
+<div class="space-y-3 font-body-sm text-body-sm bg-surface-container/60 p-5 rounded-2xl mb-6">
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Botanical Taxon:</span>
+<span class="font-semibold text-primary">Quercus Alba (Quartersawn White Oak)</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Est. Germination Year:</span>
+<span class="font-semibold">Circa 1845 (180 Growth Rings Counted)</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Equilibrium Moisture:</span>
+<span class="font-semibold text-tertiary">7.2% calibrated at 21°C</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Salvage Location:</span>
+<span class="font-semibold">Shenandoah Valley Historic Mill, VA</span>
+</div>
+<div class="flex justify-between py-1">
+<span class="text-on-surface-variant">Non-Destructive Sonic Density:</span>
+<span class="font-semibold">0.74 g/cm³ (Zero Internal Delamination)</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-2xl">fingerprint</span>
+<span class="text-xs font-label-sm text-on-surface-variant">Hardware NFC Cryptographic Key Active</span>
+</div>
+<button class="px-6 py-2.5 rounded-full bg-primary-container text-surface-container-low font-label-md text-label-md hover:bg-secondary transition-all" onclick="closeCertModal()">
+          Print Spec Record
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification for Added Specs -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="spec-toast">
+<div class="px-5 py-3 rounded-full bg-primary text-surface-container-lowest shadow-2xl flex items-center gap-3 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary-container text-xl">bookmark_added</span>
+<span id="toast-text" class="">Timber added to Architectural Spec Sheet</span>
+</div>
+</div>
+<!-- Interactive Script for Image Slider, Toast, and Certificate -->
+<script>
+    // Before-After Slider Drag Behavior
+    (function initSlider() {
+      var container = document.getElementById('slider-container');
+      var beforeImg = document.getElementById('before-image-layer');
+      var handle = document.getElementById('slider-handle');
+      if (!container || !beforeImg || !handle) return;
+
+      var isDragging = false;
+
+      function updatePosition(clientX) {
+        var rect = container.getBoundingClientRect();
+        var x = clientX - rect.left;
+        var percent = (x / rect.width) * 100;
+        if (percent < 5) percent = 5;
+        if (percent > 95) percent = 95;
+        beforeImg.style.width = percent + '%';
+        handle.style.left = percent + '%';
+      }
+
+      handle.addEventListener('mousedown', function() { isDragging = true; });
+      window.addEventListener('mouseup', function() { isDragging = false; });
+      window.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        updatePosition(e.clientX);
+      });
+
+      // Touch events
+      handle.addEventListener('touchstart', function() { isDragging = true; });
+      window.addEventListener('touchend', function() { isDragging = false; });
+      window.addEventListener('touchmove', function(e) {
+        if (!isDragging || !e.touches[0]) return;
+        updatePosition(e.touches[0].clientX);
+      });
+
+      // Click to place
+      container.addEventListener('click', function(e) {
+        updatePosition(e.clientX);
+      });
+    })();
+
+    // Spec Sheet Toast
+    function addSpecToast(itemTitle) {
+      var toast = document.getElementById('spec-toast');
+      var toastText = document.getElementById('toast-text');
+      if (!toast || !toastText) return;
+      toastText.innerText = 'Added "' + itemTitle + '" to specification sheet';
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      setTimeout(function() {
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    // Cert Modal
+    function openCertModal() {
+      var m = document.getElementById('cert-modal');
+      if (m) m.classList.remove('hidden'), m.classList.add('flex');
+    }
+    function closeCertModal() {
+      var m = document.getElementById('cert-modal');
+      if (m) m.classList.add('hidden'), m.classList.remove('flex');
+    }
+  </script>
+</div></main><footer class="w-full bg-[#21382b] text-[#ded5c5] relative overflow-hidden"><div class="max-w-[1440px] mx-auto px-6 lg:px-12 pt-16 pb-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 pb-14 border-b border-white/10"><div class="lg:col-span-2 flex flex-col gap-4"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-[#ded5c5]/10 flex items-center justify-center border border-[#8c865a]/40 text-[#ece4b1]"><span class="material-symbols-outlined text-2xl">forest</span></div><span class="font-headline-sm text-headline-sm text-white tracking-tight">VNTimber</span></div><p class="font-body-md text-body-md text-[#ded5c5]/80 italic max-w-sm">“Quality you can feel in every grain.”</p><p class="font-body-sm text-body-sm text-[#ded5c5]/60 max-w-sm">Sustainably harvested old-growth and verified salvaged architectural timbers. Certified botanical provenance and radiocarbon authenticity records for master architects.</p><div class="flex flex-wrap items-center gap-2 pt-2"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ded5c5]/10 border border-[#8c865a]/40 text-[11px] font-label-sm text-[#ece4b1]"><span class="material-symbols-outlined text-[14px]">verified</span>PEFC Certified</div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ded5c5]/10 border border-[#8c865a]/40 text-[11px] font-label-sm text-[#ece4b1]"><span class="material-symbols-outlined text-[14px]">biotech</span>C-14 Dated</div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ded5c5]/10 border border-[#8c865a]/40 text-[11px] font-label-sm text-[#ece4b1]"><span class="material-symbols-outlined text-[14px]">psychiatry</span>Kiln Stabilized</div></div></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md text-[#ece4b1] tracking-wider uppercase font-bold">Wood Catalog</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-[#ded5c5]/75"><li class=""><a class="hover:text-white transition-colors" data-path="browse" href="#">Black Walnut Slabs</a></li><li class=""><a class="hover:text-white transition-colors" data-path="browse" href="#">Quartersawn White Oak</a></li><li class=""><a class="hover:text-white transition-colors" data-path="browse" href="#">Heritage Teak Planks</a></li><li class=""><a class="hover:text-white transition-colors" data-path="browse" href="#">Burled Maple Flitches</a></li><li class=""><a class="hover:text-white transition-colors" data-path="browse" href="#">Salvaged Heart Pine</a></li></ul></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md text-[#ece4b1] tracking-wider uppercase font-bold">Services</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-[#ded5c5]/75"><li class=""><a class="hover:text-white transition-colors" data-path="care-plans" href="#">Care &amp; Refinishing</a></li><li class=""><a class="hover:text-white transition-colors" data-path="inspection" href="#">Age Verification &amp; Testing</a></li><li class=""><a class="hover:text-white transition-colors" data-path="consultation" href="#">Master Joiner Consultation</a></li><li class=""><a class="hover:text-white transition-colors" data-path="inspection" href="#">Moisture Mapping &amp; RFID</a></li><li class=""><a class="hover:text-white transition-colors" data-path="care-plans" href="#">Ceramic Timber Sealants</a></li></ul></div><div class="flex flex-col gap-3"><span class="font-label-md text-label-md text-[#ece4b1] tracking-wider uppercase font-bold">Company</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm text-[#ded5c5]/75"><li class=""><a class="hover:text-white transition-colors" data-path="home" href="#">Atelier Story</a></li><li class=""><a class="hover:text-white transition-colors" data-path="consultation" href="#">Forest Concessions</a></li><li class=""><a class="hover:text-white transition-colors" data-path="account" href="#">Architectural Portfolios</a></li><li class=""><a class="hover:text-white transition-colors" data-path="faq" href="#">Provenance Standards</a></li><li class=""><a class="hover:text-white transition-colors" data-path="faq" href="#">Shipping &amp; Rigging</a></li></ul></div><div class="flex flex-col gap-4"><span class="font-label-md text-label-md text-[#ece4b1] tracking-wider uppercase font-bold">Join The Register</span><p class="font-body-sm text-body-sm text-[#ded5c5]/75">Receive quarterly flitch offerings, salvage dispatches, and preservation briefs.</p><form class="flex flex-col gap-2" onsubmit="event.preventDefault(); alert('Subscribed to timber dispatch.');"><div class="relative"><input class="w-full px-4 py-2.5 rounded-full bg-white/10 text-white placeholder-white/40 border border-white/20 focus:border-[#8c865a] focus:bg-white/15 focus:outline-none text-sm transition-all" placeholder="architect@studio.com" required="" type="email"><button class="absolute right-1 top-1 bottom-1 px-4 rounded-full bg-[#733e1f] text-white hover:bg-[#8c6a51] text-xs font-label-md uppercase tracking-wider transition-colors flex items-center justify-center" type="submit"><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></div></form><div class="flex flex-col gap-1 text-xs text-[#ded5c5]/60 pt-2"><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-[#ece4b1]">pin_drop</span> Atelier: 404 Timberline Way, Suite 10, Cascadia</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-[#ece4b1]">call</span> +1 (800) 846-2371</span><span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[14px] text-[#ece4b1]">schedule</span> Testing Lab: Mon–Fri, 07:00 – 18:00 PST</span></div></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-body-sm text-[#ded5c5]/55"><p class="">© 2025 VNTimber Craft Guild Ltd. All rights reserved. “Quality you can feel in every grain.”</p><div class="flex items-center gap-6"><a class="hover:text-[#ded5c5] transition-colors" href="#">Privacy Policy</a><a class="hover:text-[#ded5c5] transition-colors" href="#">Terms of Appraisal</a><a class="hover:text-[#ded5c5] transition-colors" href="#">Chain of Custody Certificate</a></div></div></div></footer><div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-[#21382b]/60 backdrop-blur-md transition-opacity duration-200" id="login-modal"><div class="relative w-full max-w-md p-8 rounded-lg bg-[#ebe6de]/95 backdrop-blur-2xl border border-white/70 shadow-[0_24px_60px_-8px_rgba(33,56,43,0.3)]"><button class="absolute top-5 right-5 text-[#21382b]/60 hover:text-[#21382b] focus:outline-none" onclick="closeAuthModal()"><span class="material-symbols-outlined text-2xl">close</span></button><div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-primary text-xl">lock</span><span class="font-label-sm uppercase tracking-widest text-primary font-bold">Timber Atelier Access</span></div><h3 class="font-headline-sm text-headline-sm text-[#21382b] mb-1">Sign in to VNTimber</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Access private lumber reserve vaults and grain certificates.</p><div class="space-y-4" id="step-email"><div><label class="block font-label-md text-label-md text-on-surface mb-1.5">Architect / Maker Email</label><input class="w-full px-4 py-3 rounded-full bg-white/70 border border-[#8c6a51]/40 text-on-surface placeholder:text-on-surface-variant/50 focus:border-primary focus:bg-white focus:outline-none transition-all font-body-md text-body-md" id="auth-email-input" type="email" value="client@timberstudio.com"></div><button class="w-full py-3 rounded-full bg-[#733e1f] text-[#ded5c5] hover:bg-[#8c6a51] font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2" onclick="handleSendCode()"><span class="">Send login code</span><span class="material-symbols-outlined text-[18px]">send</span></button></div><div class="space-y-4 hidden" id="step-code"><div class="p-3 rounded-xl bg-tertiary-fixed/30 border border-tertiary/20 text-xs text-on-tertiary-container flex items-center gap-2"><span class="material-symbols-outlined text-base">info</span><span class="">Demo authentication code sent to email. Suggestion: <strong>1111</strong></span></div><div><label class="block font-label-md text-label-md text-on-surface mb-1.5">Authentication Code</label><input class="w-full px-4 py-3 text-center tracking-[0.5em] text-xl font-headline-sm rounded-full bg-white/80 border border-[#8c6a51]/50 text-[#21382b] focus:border-primary focus:bg-white focus:outline-none transition-all" id="auth-code-input" maxlength="6" type="text" value="1111"></div><button class="w-full py-3 rounded-full bg-[#733e1f] text-[#ded5c5] hover:bg-[#8c6a51] font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all duration-200" onclick="handleVerifyCode()">Confirm &amp; Sign In</button><div class="flex items-center justify-between text-xs font-label-sm pt-1"><span class="text-on-surface-variant" id="countdown-timer">Resend code in <span id="timer-seconds" class="">30</span>s</span><button class="hidden text-primary font-bold underline hover:text-[#8c6a51] focus:outline-none" id="resend-btn" onclick="handleResendCode()">Resend code</button></div></div></div></div><div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-[#21382b]/50 backdrop-blur-sm" id="logout-confirm-modal"><div class="w-full max-w-sm p-6 rounded-lg bg-[#ebe6de]/95 backdrop-blur-2xl border border-white/80 shadow-[0_20px_50px_rgba(33,56,43,0.25)] text-center"><div class="w-12 h-12 mx-auto rounded-full bg-[#733e1f]/10 text-[#733e1f] flex items-center justify-center mb-3"><span class="material-symbols-outlined text-2xl">verified_user</span></div><h4 class="font-headline-sm text-[19px] text-[#21382b] mb-2">Stay Logged In?</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Stay logged in for the best personalized experience with your saved timber reserves and provenance logs.</p><div class="flex flex-col gap-2.5"><button class="w-full py-2.5 rounded-full bg-[#733e1f] text-[#ded5c5] hover:bg-[#8c6a51] font-label-lg text-label-lg transition-all" onclick="closeLogoutConfirm()">Stay logged in</button><button class="w-full py-2.5 rounded-full border border-[#8c6a51]/50 text-secondary hover:bg-[#8c6a51]/10 font-label-md text-label-md transition-all" onclick="performLogout()">Logout anyways</button></div></div></div><script>var timerInterval=null;function openAuthModal(){var m=document.getElementById('login-modal');m.classList.remove('hidden');m.classList.add('flex');resetAuthSteps();}function closeAuthModal(){var m=document.getElementById('login-modal');m.classList.add('hidden');m.classList.remove('flex');clearInterval(timerInterval);}function resetAuthSteps(){document.getElementById('step-email').classList.remove('hidden');document.getElementById('step-code').classList.add('hidden');clearInterval(timerInterval);}function handleSendCode(){var email=document.getElementById('auth-email-input').value.trim();if(!email){alert('Please provide your architect email address.');return;}document.getElementById('step-email').classList.add('hidden');document.getElementById('step-code').classList.remove('hidden');document.getElementById('auth-code-input').value='1111';startTimer();}function startTimer(){clearInterval(timerInterval);var sec=30;var timerEl=document.getElementById('countdown-timer');var secEl=document.getElementById('timer-seconds');var resendBtn=document.getElementById('resend-btn');timerEl.classList.remove('hidden');resendBtn.classList.add('hidden');secEl.innerText=sec;timerInterval=setInterval(function(){sec--;if(sec<=0){clearInterval(timerInterval);timerEl.classList.add('hidden');resendBtn.classList.remove('hidden');}else{secEl.innerText=sec;}},1000);}function handleResendCode(){startTimer();alert('New login code (1111) sent.');}function handleVerifyCode(){var code=document.getElementById('auth-code-input').value.trim();if(code==='1111'||code.length>=4){closeAuthModal();setLoggedInState(true);}else{alert('Please enter valid demo authentication code: 1111');}}function setLoggedInState(isLoggedIn){var loginBtn=document.getElementById('header-login-btn');var profileArea=document.getElementById('logged-in-profile');if(isLoggedIn){loginBtn.classList.add('hidden');profileArea.classList.remove('hidden');profileArea.classList.add('flex');}else{loginBtn.classList.remove('hidden');profileArea.classList.add('hidden');profileArea.classList.remove('flex');}}function openLogoutConfirm(){var m=document.getElementById('logout-confirm-modal');m.classList.remove('hidden');m.classList.add('flex');}function closeLogoutConfirm(){var m=document.getElementById('logout-confirm-modal');m.classList.add('hidden');m.classList.remove('flex');}function performLogout(){closeLogoutConfirm();setLoggedInState(false);}</script></body></html>
